@@ -1116,7 +1116,7 @@ pre::after {
 1. 源代码需要发布到Github上。
 2. public目录不能发布。（添加到 .gitignore上）
 3. 主题如果是从github下载下来的，子目录里面会有 `.git` 文件，发布代码的话，内层目录是不能有`.git`的，它会识别成另一个git仓库并忽略上传，只上传一个软链接文件。所以需要删除themes主题下面的`.git`文件，否则 Vercel 无法从 github上拉取到主题，编译会失败。
-4. 需要注意因为我的theme采用另外的github项目，所以需要git submodule进行更新才可以。![image-20230317172155740.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/beb389c383964d0a96772944d8cb92b7~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+4. 需要注意因为我的theme采用另外的github项目，所以需要git submodule进行更新才可以。![hugo部署vercel踩坑记录](https://zzp-note.oss-cn-hangzhou.aliyuncs.com/image/7338611185191206975-2.png)
 
 ### 12.2 部署步骤
 
